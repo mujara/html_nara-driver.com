@@ -1,0 +1,140 @@
+@use "../_setting" as s;
+
+#mailform  {
+  @include s.media(m){
+    display:block;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  input {
+    border:1px solid #ccc;
+    width:100% !important;
+    min-height:30px;
+    display:block;
+    outline: none;
+    vertical-align:middle;
+
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -o-border-radius:3px;
+    -ms-border-radius:3px;
+    border-radius:3px;
+  }
+  input[type=radio] {
+    display:inline;
+    width:1em !important;
+  }
+  input[type=checkbox] {
+    display:inline;
+    width:1em !important;
+  }
+  input[type=submit] {
+    background:none;
+    padding:0.8rem;
+    background:#000;
+    margin:0 0 20px;
+    cursor: pointer;
+    color:#FFF;
+    font-weight:bold;
+    @include s.media(m){
+      width:60% !important;
+      margin-left:auto;
+      margin-right:auto;
+      font-size:1.2em;
+      padding:1em;
+    }
+  }
+  input[type=reset] {
+    background:none;
+    padding:0.8rem;
+    background:#F3DCEC;
+    margin:0 0 20px;
+    cursor: pointer;
+  }
+  textarea{
+    border:1px solid #ccc;
+    width:100% !important;
+    min-height:30px;
+    display:block;
+    margin-bottom:15px;
+    margin-top:5px;
+    outline: none;
+
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -o-border-radius:3px;
+    -ms-border-radius:3px;
+    border-radius:3px;
+  }
+  dl{ 
+    dt{
+      @include s.media(m){
+        width:30%; 
+        float:left; 
+        text-align:right; 
+        clear:both;
+        margin:0 0 0.8rem;
+        font-size:1.2em;
+      }
+      span{
+        font-size:0.7em;
+        color:#FFF;
+        background:#db083e;
+        border-radius:0.1em;
+        padding:0.1em 0.6em;
+        margin-left:1em;
+        display:inline-block;
+        margin-bottom:0.3em;
+        float:right;
+        line-height: 1.6em;
+        @include s.media(m){
+          font-size:0.8em;
+          margin-bottom:0;
+          padding:0.1em 0.6em;
+          float:none;
+        }
+      }
+      label{
+        @include s.media(m){
+          padding:0.8rem 20px; 
+          display:block;
+        }
+      }
+    }
+    dd{ 
+      line-height:2em; 
+      padding:0 0 15px; 
+      margin:0 0 0.8rem; 
+      border-bottom:#E8E8E8 solid 1px;
+      display:block; 
+      @include s.media(m){
+        width:65%; 
+        float:left; 
+        padding:0.2em 0.8rem 0.8rem 0.8rem;
+        border-bottom:none;
+      }
+    }
+  }
+}
+
+.mailformBox{
+  @include s.media(m){
+    width:90%;
+    margin:0 auto 30px;
+    border:#D7D7D7 solid 5px;
+    padding:40px 0 0 20px;
+  }
+}
+
+.wpcf7-radio{
+    @include s.media(m){
+      font-size:1.2em;
+      display:inline-block;
+      margin-top:0.3em;
+    }
+}
+
+.article #mailform  p {
+    margin-bottom: 0;
+}

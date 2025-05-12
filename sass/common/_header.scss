@@ -1,0 +1,74 @@
+@use "../_setting" as s;
+
+#header {
+  position: relative;
+  transition: 0.3s;
+  z-index: 5;
+}
+
+.header {
+  &__siteTitleBox {
+    display: block;
+    @include s.media(m) {
+      width: 18%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    @include s.media(xxl) {
+      width: 22.5em;
+    }
+    img {
+      width: 100%;
+    }
+    &__inner {
+      display: block;
+      position: relative;
+    }
+    h1 {
+      width: 40%;
+      display: block;
+      margin-right: 1em;
+      @include s.media(m) {
+        width: 100%;
+        margin-bottom: 0.3em;
+        padding-bottom: 1em;
+      }
+      @include s.media(xxl) {
+        margin-bottom: 0;
+        padding-right: 0.5em;
+      }
+    }
+  }
+  &__siteTitle {
+    width: 100%;
+    padding: 1.5em 1em 1.5em 2em;
+    display: flex;
+    align-items: end;
+    @include s.media(m) {
+      padding: 1em 0 0 1em;
+      display: block;
+    }
+    @include s.media(xl) {
+      padding: 2.8em 0 0 2.8em;
+    }
+  }
+  &__sentence {
+    @include s.fontType01(Medium);
+    font-size: 0.875em;
+    width: 12em;
+    display: block;
+    @include s.media(m) {
+      width: 12em;
+      margin-top: -1.4em;
+    }
+    @include s.media(xl) {
+    }
+  }
+}
+
+.home .header__siteTitleBox h1 {
+  @include s.media(m) {
+    background: rgba(s.$colorType01, 1);
+  }
+}

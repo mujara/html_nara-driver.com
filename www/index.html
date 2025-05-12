@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" /> 
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="home" class="home is-pageFade">
+<div class="page-transition"></div>
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+		<div class="header__headBox">
+			<div class="header__siteTitleBox">
+				<div class="header__siteTitle">
+					<h1><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="奈良のトラックドライバー求人" /></a></h1>
+					<h2 class="header__sentence">奈良のトラックドライバーを応援するWEBサイト</h2>
+				<!-- /.header__siteTitle --></div>
+			<!-- /.header__siteTitleBox --></div>
+			
+		<div id="pageTopFix">
+			<nav class="globalNavi">
+				<div class="globalNavi__title"><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle2.svg" alt="奈良のトラックドライバー求人" /></a></div>
+				<ul class="globalNavi__menu__main">
+					<li><a href="<?php echo home_url(); ?>/recruitment"><span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span><span>求人情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/column"><span><img src="img/common/iconGlobalNavi02.svg" alt="奈良のドライバーコラム" /></span><span>奈良のドライバーコラム</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/consultation"><span><img src="img/common/iconGlobalNavi03.svg" alt="就職相談会情報" /></span><span>就職相談会情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/beginner"><span><img src="img/common/iconGlobalNavi04.svg" alt="未経験者の方へ" /></span><span>未経験者の方へ</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/career"><span><img src="img/common/iconGlobalNavi05.svg" alt="経験者の方へ" /></span><span>経験者の方へ</span></a></li>
+				</ul>
+			<!-- /.globalNavi --></nav>
+
+		<!-- /#pageTopFix --></div>
+		
+		    <nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<dl class="globalNaviSmall__siteTitle">
+										<dt><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="奈良のトラックドライバー求人" /></a></dt>
+										<dd>奈良のトラックドライバーを応援するWEBサイト</dd>
+									</dl>
+
+									<div class="globalNaviSmall__inner">
+										<ul class="globalNaviSmall__navi --type01">
+											<li><a href="<?php echo home_url(); ?>/recruitment"><span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span><span>求人情報</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/column"><span><img src="img/common/iconGlobalNavi02.svg" alt="奈良のドライバーコラム" /></span><span>奈良の<br class="hidden-pc">ドライバーコラム</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/consultation"><span><img src="img/common/iconGlobalNavi03.svg" alt="就職相談会情報" /></span><span>就職相談会情報</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/beginner"><span><img src="img/common/iconGlobalNavi04.svg" alt="未経験者の方へ" /></span><span>未経験者の方へ</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/career"><span><img src="img/common/iconGlobalNavi05.svg" alt="経験者の方へ" /></span><span>経験者の方へ</span></a></li>
+										</ul>
+										<ul class="globalNaviSmall__navi --type02">
+											<li><a href="<?php echo home_url(); ?>/company">運営会社</a></li>
+											<li><a href="<?php echo home_url(); ?>/request">掲載依頼</a></li>
+											<li><a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a></li>
+											<li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
+										</ul>
+									<!-- /.globalNaviSmall__inner --></div>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+		    <!-- /.globalNaviSmall --></nav>
+		<!-- /.header__headBox --></div>
+	<!-- /#header --></header>
+    
+	<section class="mainVisualBox">
+		<div class="inBase clearfix">
+			<div class="mainVisualBox__inner">
+
+			<!-- スライダーここから -->
+			<div class="sliderBox--typeMainVisual">
+			<!-- Slider全体のコンテナ -->
+			<div class="swiper">
+			    <!-- Sliderの内包コンテナ -->
+			    <div class="swiper-wrapper">
+			        <!-- Slideさせたいコンテンツ -->
+			        <div class="swiper-slide">
+					<figure class="mainVisualBox__image --type01"><img src="img/home/mainVisual01.jpg" alt="奈良のおすすめ求人情報掲載" /></figure>
+					<div class="mainVisualBox__sentence --type01"><a href="#">
+			    			<h2 class="mainVisualBox__title">
+							<span>奈良の道が好きだから<br>それが仕事になった</span>
+							<span>私がトラックドライバーになった理由</span>
+						</h2>
+						<p class="mainVisualBox__link"><span>詳細</span></p>
+					</a><!-- /.mainVisualBox__sentence --></div>
+				<!-- /.swiper-slide --></div>
+			        <div class="swiper-slide">
+					<figure class="mainVisualBox__image --type02"><img src="img/home/mainVisual02.jpg" alt="奈良のおすすめ求人情報掲載" /></figure>
+					<div class="mainVisualBox__sentence --type02"><a href="#">
+			    			<h2 class="mainVisualBox__title">
+							<span>全国へ走り、奈良へ帰る。<br>シンプルがいい。私の生きる道。</span>
+							<span>タイトルタイトル</span>
+						</h2>
+						<p class="mainVisualBox__link"><span>詳細</span></p>
+					</a><!-- /.mainVisualBox__sentence --></div>
+				<!-- /.swiper-slide --></div>
+			        <div class="swiper-slide">
+					<figure class="mainVisualBox__image --type03"><img src="img/home/mainVisual03.jpg" alt="奈良のおすすめ求人情報掲載" /></figure>
+					<div class="mainVisualBox__sentence --type03"><a href="#">
+			    			<h2 class="mainVisualBox__title">
+							<span>記事タイトルタイトル<br>記事タイトルタイトル</span>
+							<span>タイトルタイトルタイトルタイトル</span>
+						</h2>
+						<p class="mainVisualBox__link"><span>詳細</span></p>
+					</a><!-- /.mainVisualBox__sentence --></div>
+				<!-- /.swiper-slide --></div>
+
+			    <!-- /.swiper-wrapper --></div>
+			    <!-- ページネーション（※省略可） -->
+			    <div class="swiper-pagination"></div>
+
+			<!-- /.swiper --></div>
+			<!-- Sliderここまで -->
+			<!-- /.sliderBox--typeMainVisual --></div>
+			<!-- スライダーここまで -->
+
+	        	<!-- /.mainVisualBox__inner --></div>
+			
+			<div class="mainVisualBox__banner">
+				<p>おすすめ<br>求人情報<br><span>掲載中</span></p>
+			<!-- /.header__banner --></div>
+        	<!-- /.inBase --></div>
+	<!-- /.mainVisualBox --></section>
+	
+	<div id="contents" class="clearfix">
+		<div class="inBase clearfix">
+			<div class="homeRecruitmentBox">
+				<div class="homeRecruitmentBox__titleBox"><div class="homeRecruitmentBox__titleBox__inner">
+					<div class="homeRecruitmentBox__catch">
+						<p>ピックアップ</p>
+						<figure class="homeRecruitmentBox__catchImage"><img src="img/home/iconShika.svg" alt="奈良のトラック求人" /></figure>
+					</div>
+					<h3 class="homeRecruitmentBox__title">求人<br>　情報</h3>
+					<div class="homeRecruitmentBox__button"><a href="<?php echo home_url(); ?>/recruitment">求人<br>一覧</a></div>
+	        		<!-- /.homeRecruitmentBox__titleBox__inner --></div><!-- /.homeRecruitmentBox__titleBox --></div>
+
+				<div class="homeRecruitmentBox__content">
+					<div class="homeRecruitmentBox__article"><a href="#">
+						<figure class="homeRecruitmentBox__articleImage"><img src="img/home/imgKyujin01.jpg" alt="奈良のトラック求人" /></figure>
+						<h4 class="homeRecruitmentBox__articleTitle">ドライバー（2ｔ）求人タイ</h4>
+						<div class="homeRecruitmentBox__button02"><span>求人を見る</span></div>
+					</a><!-- /.homeRecruitmentBox__article --></div>
+
+					<div class="homeRecruitmentBox__article"><a href="#">
+						<figure class="homeRecruitmentBox__articleImage"><img src="img/home/imgKyujin02.jpg" alt="奈良のトラック求人" /></figure>
+						<h4 class="homeRecruitmentBox__articleTitle">ドライバー（2ｔ）求人タイトルが入ります　求人タイトルが入ります</h4>
+						<div class="homeRecruitmentBox__button02"><span>求人を見る</span></div>
+					</a><!-- /.homeRecruitmentBox__article --></div>
+
+					<div class="homeRecruitmentBox__article"><a href="#">
+						<figure class="homeRecruitmentBox__articleImage"><img src="img/home/imgKyujin03.jpg" alt="奈良のトラック求人" /></figure>
+						<h4 class="homeRecruitmentBox__articleTitle">ドライバー（2ｔ）求人タイトルが入ります　求人タイトルが入りますトルが入ります　求人タイトルが入ります</h4>
+						<div class="homeRecruitmentBox__button02"><span>求人を見る</span></div>
+					</a><!-- /.homeRecruitmentBox__article --></div>
+	        		<!-- /.homeRecruitmentBox__content --></div>
+	        	<!-- /.homeRecruitmentBox --></div>
+
+			<div class="cautionBox">
+				<div class="cautionBox__title">
+					<figure><img src="img/common/imgCaution.svg" alt="!" /></figure>
+					<h3>当サイトの求人内容は奈良県内の走行のみに限定したものではありません。</h3>
+				<!-- /.cautionBox__title --></div>
+				<div class="cautionBox__sentence">
+					当サイトの紹介する求人内容は、「奈良県を起点に、他の都道府県へ」という<br>
+					業務内容が主になります。<br>
+					奈良県内での走行に限定した求人を紹介しているものではありません。<br>
+					ご了承の程、よろしくお願い致します。
+				<!-- /.cautionBox__sentence --></div>
+	        	<!-- /.cautionBox --></div>
+
+
+			<div class="homeFeatureBox">
+				<div class="sectionTitleBox">
+					<div class="sectionTitleBox__fukidashi">
+						<p><b>奈良</b>だけ？</p>
+						<figure><img src="img/home/imgFukidashi01.svg" alt="奈良 トラックドライバー" /></figure>
+					<!-- /.sectionTitleBox__fukidashi --></div>
+					<h3 class="sectionTitleBox__title"><span>奈良のトラックドライバーが感じる</span><span>トラックドライバーの特徴</span></h3>
+	        		<!-- /.sectionTitleBox --></div>
+
+				<div class="homeFeatureBox__content">
+					<figure class="homeFeatureBox__illustMap"><img src="img/home/imgIllustMap.png" alt="奈良とトラックドライバー" /></figure>
+					
+					<div class="homeFeatureBox__inner">
+						<div class="homeFeatureBox__feature">
+							<div class="homeFeatureBox__titleBox">
+								<figure><img src="img/home/iconFeature01.svg" alt="奈良のトラックドライバーの特徴01" /></figure>
+								<p>特徴01</p>
+								<h4 class="homeFeatureBox__title">道路にいるシカと遭遇する！</h4>
+							<!-- /.homeFeatureBox__titleBox --></div>
+							<p class="homeFeatureBox__sentence">奈良公園周辺の話ですがトラックで走っていると<br>
+								道路にシカがいます。<br>
+								他県ではあまりみられない風景ですね。<br>
+								ほっこりする時も、どっきりする時もある存在です。</p>
+							<figure class="homeFeatureBox__image01"><img src="img/home/imgFeature01.jpg" alt="道路にいるシカ 1匹" /></figure>
+							<figure class="homeFeatureBox__image02"><img src="img/home/imgFeature02.jpg" alt="道路にいるシカ 2匹" /></figure>
+						<!-- /.homeFeatureBox__feature --></div>
+
+						<div class="homeFeatureBox__feature">
+							<div class="homeFeatureBox__titleBox">
+								<figure><img src="img/home/iconFeature02.svg" alt="奈良のトラックドライバーの特徴02" /></figure>
+								<p>特徴02</p>
+								<h4 class="homeFeatureBox__title">ふと、歴史的な風情を感じる！</h4>
+							<!-- /.homeFeatureBox__titleBox --></div>
+							<p class="homeFeatureBox__sentence">奈良には歴史を感じる趣きのある建物や場所が多くあります。<br>
+								特に有名な場所でなくても、ふとした小さな風景が<br>
+								ロマンチックな感情を起こさせます。<br>
+								トラックで走っているとたびたびそんな風情を感じます。</p>
+							<figure class="homeFeatureBox__image03"><img src="img/home/imgFeature03.jpg" alt="奈良の歴史的な風景" /></figure>
+						<!-- /.homeFeatureBox__feature --></div>
+
+						<div class="homeFeatureBox__feature">
+							<div class="homeFeatureBox__titleBox">
+								<figure><img src="img/home/iconFeature03.svg" alt="奈良のトラックドライバーの特徴03" /></figure>
+								<p>特徴03</p>
+								<h4 class="homeFeatureBox__title">絶妙な自然と都会の距離感！</h4>
+							<!-- /.homeFeatureBox__titleBox --></div>
+							<p class="homeFeatureBox__sentence">奈良には豊かな自然があり、トラックで走っていると<br>
+								その移り変わりがとても美しく感じます。また自然ばかりでなく<br>
+								人の集まる中心地や場所もあり、大阪や京都との距離も近く、<br>
+								自然と都会両方のいいところを感じることができます。</p>
+							<figure class="homeFeatureBox__image04"><img src="img/home/imgFeature04.jpg" alt="奈良の自然" /></figure>
+							<figure class="homeFeatureBox__image05"><img src="img/home/imgFeature05.jpg" alt="奈良の街並み" /></figure>
+						<!-- /.homeFeatureBox__feature --></div>
+					<!-- /.homeFeatureBox__inner --></div>
+				<!-- /.homeFeatureBox__content --></div>
+	        	<!-- /.homeFeatureBox --></div>
+
+			<div class="homeConsultationBox">
+				<div class="sectionTitleBox">
+					<h3 class="sectionTitleBox__title"><span>奈良のトラックドライバー</span><span>就職・転職説明会</span></h3>
+	        		<!-- /.sectionTitleBox --></div>
+				
+				<div class="homeConsultationBox__content">
+					<div class="homeConsultationBox__image">
+						<figure><img src="img/home/imgSession01.jpg" alt="奈良のトラックドライバー会社" /></figure>
+						<figure><img src="img/home/imgSession02.jpg" alt="奈良のトラックドライバー会社" /></figure>
+					<!-- /.homeConsultationBox__image --></div>
+					<div class="homeConsultationBox__inner">
+						<h4 class="homeConsultationBox__title">
+							トラックドライバーって<br class="hidden-pc">どんな職業？<br>
+							実際に肌で感じてもらう為に<br>
+							相談会を実施しています。
+						</h4>
+						<div class="homeConsultationBox__sentence">
+							インターネットでは伝えることができない、<br>
+							職場の環境、イメージ、雰囲気を知っていただく為に<br>
+							相談会を実施しています。<br>
+							求人情報には記載していない情景をご相談いただくことも<br>
+							できますので是非お気軽にご応募下さい。
+						<!-- /.homeConsultationBox__sentence --></div>
+						<div class="button--type01 tR">
+							<a href="<?php echo home_url(); ?>/consultation">相談会に応募する</a>
+						<!-- /.button--type01 --></div>
+					<!-- /.homeConsultationBox__inner --></div>
+				<!-- /.homeConsultationBox__content --></div>
+	        	<!-- /.homeConsultationBox --></div>
+        	<!-- /.inBase --></div>
+
+		<div class="homeColumnBox">
+			<div class="inBase clearfix">
+				<div class="homeColumnBox__bgBox"><figure><img src="img/home/bgColumnCenter.png" alt="奈良のトラックドライバーが書くコラム" /></figure><!-- /.homeColumnBox__bgBox --></div>
+				<div class="homeColumnBox__titleBox">
+					<div class="homeColumnBox__fukidashi">
+						<figure><img src="img/home/imgFukidashi02.svg" alt="奈良 トラックドライバー" /></figure>
+						<p>トラックドライバー<br>あるある？</p>
+					<!-- /.homeColumnBox__fukidashi --></div>
+					<h3 class="homeColumnBox__title"><span>奈良トラック</span><span>ドライバーコラム</span></h3>
+					<div class="homeColumnBox__button"><a href="<?php echo home_url(); ?>/column">コラム<br>一覧</a></div>
+        			<!-- /.homeColumnBox__titleBox --></div>
+				<p class="homeColumnBox__sentence">現役のドライバーの方や業界の情報を掲載しています。<br>奈良のトラックドライバーならではの記事をご覧下さい。</p>
+				<div class="homeColumnBox__inner">
+					<div class="homeColumnBox__article"><a href="#">
+						<div class="homeColumnBox__articleImage">
+							<figure><img src="img/home/imgColumn01.jpg" alt="記事" /></figure>
+							<p><span>2024/10/02</span></p>
+						<!-- /.homeColumnBox__articleImage --></div>
+						<h4 class="homeColumnBox__articleTitle">奈良のトラックドライバーの仕事の必需品のご紹介</h4>
+					</a><!-- /.homeColumnBox__article --></div>
+
+					<div class="homeColumnBox__article"><a href="#">
+						<div class="homeColumnBox__articleImage">
+							<figure><img src="img/home/imgColumn02.jpg" alt="記事" /></figure>
+							<p><span>2024/10/01</span></p>
+						<!-- /.homeColumnBox__articleImage --></div>
+						<h4 class="homeColumnBox__articleTitle">奈良のトラックドライバーが遭遇したドッキリエピソード</h4>
+					</a><!-- /.homeColumnBox__article --></div>
+
+					<div class="homeColumnBox__article"><a href="#">
+						<div class="homeColumnBox__articleImage">
+							<figure><img src="img/home/imgColumn03.jpg" alt="記事" /></figure>
+							<p><span>2024/09/28</span></p>
+						<!-- /.homeColumnBox__articleImage --></div>
+						<h4 class="homeColumnBox__articleTitle">奈良　〇〇地区で雪で立ち往生した時のはなし</h4>
+					</a><!-- /.homeColumnBox__article --></div>
+
+					<div class="homeColumnBox__article"><a href="#">
+						<div class="homeColumnBox__articleImage">
+							<figure><img src="img/home/imgColumn04.jpg" alt="記事" /></figure>
+							<p><span>2024/09/27</span></p>
+						<!-- /.homeColumnBox__articleImage --></div>
+						<h4 class="homeColumnBox__articleTitle">奈良のトラックドライバーがお勧めする美味しいスイーツのお店　「〇〇」</h4>
+					</a><!-- /.homeColumnBox__article --></div>
+
+					<div class="homeColumnBox__article"><a href="#">
+						<div class="homeColumnBox__articleImage">
+							<figure><img src="img/home/imgColumn05.jpg" alt="記事" /></figure>
+							<p><span>2024/09/20</span></p>
+						<!-- /.homeColumnBox__articleImage --></div>
+						<h4 class="homeColumnBox__articleTitle">奈良でトラックドライバーをしていて良かったと思うこと</h4>
+					</a><!-- /.homeColumnBox__article --></div>
+				<!-- /.homeColumnBox__inner --></div>
+
+				<figure class="homeColumnBox__bottomImage">
+					<img src="img/home/bgColumnBottom.png" alt="奈良とトラックドライバーのイメージ" />
+				<!-- /.homeColumnBox__bottomImage --></figure>
+        		<!-- /.inBase --></div>
+	        <!-- /.homeColumnBox --></div>
+
+
+		<div class="homeVoiceBox">
+			<div class="sectionTitleBox">
+				<h3 class="sectionTitleBox__title"><span>奈良のトラックドライバーに</span><span>就職・転職された方の声</span></h3>
+	        	<!-- /.sectionTitleBox --></div>
+
+				<div class="homeVoiceBox__content">
+
+
+				<!-- スライダーここから -->
+				<div class="sliderBox--typeVoice">
+				<div class="inBase">
+				<!-- Slider全体のコンテナ -->
+				<div class="swiper">
+				    <!-- Sliderの内包コンテナ -->
+				    <div class="swiper-wrapper">
+				        <!-- Slideさせたいコンテンツ -->
+					<div class="swiper-slide">
+						<div class="homeVoiceBox__inner">
+							<p class="homeVoiceBox__voice">「奈良の方はおおらかで、とても仕事がしやすいです。同じ関西圏でも、大阪とは気質が違っていて驚きました。大阪もいいところでしたよ。」</p>
+							<div class="homeVoiceBox__person">
+								<figure><img src="img/home/imgVoice01.jpg" alt="転職された方" /></figure>
+								<p>転職された方の簡単な説明と名前のイニシャルを表示</p>
+							<!-- /.homeVoiceBox__person --></div>
+	        				<!-- /.homeVoiceBox__inner --></div>
+					<!-- /.swiper-slide --></div>
+					<div class="swiper-slide">
+						<div class="homeVoiceBox__inner">
+							<p class="homeVoiceBox__voice">「トラックの運転は普通の車の運転と全然違っていて、難しかったです。しかし、日々自分の運転技術の進歩が感じられ、お客様に喜んでいただける機会が増え充実しています。」</p>
+							<div class="homeVoiceBox__person">
+								<figure><img src="img/home/imgVoice02.jpg" alt="転職された方" /></figure>
+								<p>転職された方の簡単な説明と名前のイニシャルを表示</p>
+							<!-- /.homeVoiceBox__person --></div>
+	        				<!-- /.homeVoiceBox__inner --></div>
+					<!-- /.swiper-slide --></div>
+					<div class="swiper-slide">
+						<div class="homeVoiceBox__inner">
+							<p class="homeVoiceBox__voice">「はじめは未経験で不安でしたが、しっかりとフォローいただき、現在は一人立ちできました。今は、後進の育成にとりくんでいます。」</p>
+							<div class="homeVoiceBox__person">
+								<figure><img src="img/home/imgVoice03.jpg" alt="転職された方" /></figure>
+								<p>転職された方の簡単な説明と名前のイニシャルを表示</p>
+							<!-- /.homeVoiceBox__person --></div>
+	        				<!-- /.homeVoiceBox__inner --></div>
+					<!-- /.swiper-slide --></div>
+					<div class="swiper-slide">
+						<div class="homeVoiceBox__inner">
+							<p class="homeVoiceBox__voice">「転職された方のコメントをここに表示します。転職された方のコメントをここに表示します。転職された方のコメントをここに表示します。」</p>
+							<div class="homeVoiceBox__person">
+								<figure><img src="img/home/imgVoice04.jpg" alt="転職された方" /></figure>
+								<p>転職された方の簡単な説明と名前のイニシャルを表示</p>
+							<!-- /.homeVoiceBox__person --></div>
+	        				<!-- /.homeVoiceBox__inner --></div>
+					<!-- /.swiper-slide --></div>
+					<div class="swiper-slide">
+						<div class="homeVoiceBox__inner">
+							<p class="homeVoiceBox__voice">「転職された方のコメントをここに表示します。転職された方のコメントをここに表示します。転職された方のコメントをここに表示します。」</p>
+							<div class="homeVoiceBox__person">
+								<figure><img src="img/home/imgVoice05.jpg" alt="転職された方" /></figure>
+								<p>転職された方の簡単な説明と名前のイニシャルを表示</p>
+							<!-- /.homeVoiceBox__person --></div>
+	        				<!-- /.homeVoiceBox__inner --></div>
+					<!-- /.swiper-slide --></div>
+					<div class="swiper-slide">
+					<!-- /.swiper-slide --></div>
+				    <!-- /.swiper-wrapper --></div>
+
+				<!-- /.swiper --></div>
+				<!-- Sliderここまで -->
+
+				<!-- /.inBase --></div>
+				<!-- /.sliderBox--typeVoice --></div>
+				<!-- スライダーここまで -->
+
+
+        			<!-- /.homeVoiceBox__content --></div>
+
+	        <!-- /.homeVoiceBox --></div>
+
+		<div class="inBase clearfix">
+			<div class="homeMessageBox">
+				<div class="sectionTitleBox">
+					<h3 class="sectionTitleBox__title"><span>奈良のトラックドライバーに</span><span>就職・転職を考えている方へ</span></h3>
+		        	<!-- /.sectionTitleBox --></div>
+				
+				<div class="homeMessageBox__content">
+					<div class="homeMessageBox__inner">
+						<figure class="homeMessageBox__image"><img src="img/home/imgBeginner.jpg" alt="未経験者の方へ" /></figure>
+						<h4 class="homeMessageBox__title"><span>トラックドライバー</span><span>未経験者の方へ</span><!-- /.homeMessageBox__title --></h4>
+						<p class="homeMessageBox__message">
+							安心して下さい。<br>必要な技術や資格のフォロー、<br class="hidden-sp">充実した研修を致します。<br class="hidden-sp">独り立ちできるトラック<br class="hidden-sp">ドライバーを目指しましょう！
+						<!-- /.homeMessageBox__message --></p>
+						<p class="homeMessageBox__sentence">
+							トラックドライバーとして一人前になるには様々な経験と知識、<br class="hidden-sp">技術と資格が必要ですが、はじめから全てを持っている人はいません。<br>日々の仕事を通じ各々の精進し、共に成長していきましょう。
+						<!-- /.homeMessageBox__sentence --></p>
+						
+						<div class="button--type01">
+							<a href="<?php echo home_url(); ?>/beginner">未経験者の方へ</a>
+						<!-- /.button--type01 --></div>
+					<!-- /.homeMessageBox__inner --></div>
+
+					<div class="homeMessageBox__inner">
+						<figure class="homeMessageBox__image"><img src="img/home/imgExperienced.jpg" alt="経験者の方へ" /></figure>
+						<h4 class="homeMessageBox__title"><span>トラックドライバー</span><span>経験者の方へ</span><!-- /.homeMessageBox__title --></h4>
+						<p class="homeMessageBox__message">
+							よりよい職場環境を求めている方、<br class="hidden-sp">自分の技術をより深めたい方、<br class="hidden-sp">より稼ぎたい方、是非そのご要望を<br class="hidden-sp">ご相談下さい。
+						<!-- /.homeMessageBox__message --></p>
+						<p class="homeMessageBox__sentence">
+							これまでトラックドライバーとしてご活躍されている方も是非相談下さい。<br class="hidden-sp">当社は奈良県で長年物流業を営んでいる会社です。<br>あなたのこれからの良いキャリアになる働き方を考えていきましょう。
+						<!-- /.homeMessageBox__sentence --></p>
+						
+						<div class="button--type01">
+							<a href="<?php echo home_url(); ?>/career">経験者の方へ</a>
+						<!-- /.button--type01 --></div>
+					<!-- /.homeMessageBox__inner --></div>
+				<!-- /.homeMessageBox__content --></div>
+		        <!-- /.homeMessageBox --></div>
+
+
+			<div class="homeContactBox">
+				<figure class="homeContactBox__image"><img src="img/home/imgConsultant.jpg" alt="奈良でトラックドライバーを希望する方へ" /></figure>
+				<div class="homeContactBox__content">
+					<div class="sectionTitleBox">
+						<h3 class="sectionTitleBox__title"><span>奈良のトラックドライバー</span><span>就職・転職相談受付中</span></h3>
+					<!-- /.sectionTitleBox --></div>
+					<p class="homeContactBox__sentence">
+						現在、迷われている方は是非お問い合わせください。<br>奈良のトラックドライバーについてなんでもお聞きください。
+					</p>
+					<div class="homeContactBox__telBox">
+						<p>Tel.<b>00-000-0000</b></p>
+						<p>受付時間　平日10：00-18：00</p>
+					<!-- /.homeContactBox__telBox --></div>
+					<div class="button--type01 tR">
+						<a href="<?php echo home_url(); ?>/contact">お問い合わせ</a>
+					<!-- /.button--type01 --></div>
+				<!-- /.homeContactBox__content --></div>
+		        <!-- /.homeContactBox --></div>
+	        <!-- /.inBase --></div>
+
+		<div class="homeAboutBox">
+			<div class="inBase clearfix">
+				<figure class="homeAboutBox__bg01"><img src="img/home/imgAboutTop.png" alt="奈良のトラックドライバーを応援するサイト" /></figure>
+				<figure class="homeAboutBox__bg02"><img src="img/home/imgAboutBottom.png" alt="奈良のトラックドライバーを応援するサイト" /></figure>
+				<h3 class="homeAboutBox__title">当サイトについて</h3>
+				<p class="homeAboutBox__sentence">当サイトは奈良県で物流業を営んでいる〇○が、奈良のトラックドライバーの求人について運営しているメディアサイトです。<br>
+トラックドライバーという職業の様々な部分を発信し、これから就職を考えている方やこの職を目指したい方、<br>
+また、現在奈良県でトラックドライバーを職業として選択された方へ有益な情報を提供したいと考えていまず。<br>
+奈良のトラックドライバーがよりよいキャリアを築く一助として、当サイトを活用いただければ幸いです。</p>
+				<div class="homeAboutBox__buttonBox">
+					<div class="homeAboutBox__button"><a href="<?php echo home_url(); ?>/company">運営会社</a></div>
+					<div class="homeAboutBox__button"><a href="<?php echo home_url(); ?>/request">掲載依頼</a></div>
+					<div class="homeAboutBox__button"><a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a></div>
+	        		<!-- /.homeAboutBox__buttonBox --></div>
+	        	<!-- /.inBase --></div>
+	        <!-- /.homeAboutBox --></div>
+
+        
+	<!-- /#contents --></div>
+
+	
+	<footer id="footer">
+		<div class="inBase clearfix --typeFooter">
+			<dl class="footer__siteTitle">
+				<dt><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="奈良のトラックドライバー求人" /></a></dt>
+				<dd>奈良のトラックドライバーを応援するWEBサイト</dd>
+			</dl>
+
+			<div class="footer__inner">
+				<ul class="footer__navi --type01">
+					<li><a href="<?php echo home_url(); ?>/recruitment"><span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span><span>求人情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/column"><span><img src="img/common/iconGlobalNavi02.svg" alt="奈良のドライバーコラム" /></span><span>奈良の<br class="hidden-pc">ドライバーコラム</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/consultation"><span><img src="img/common/iconGlobalNavi03.svg" alt="就職相談会情報" /></span><span>就職相談会情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/beginner"><span><img src="img/common/iconGlobalNavi04.svg" alt="未経験者の方へ" /></span><span>未経験者の方へ</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/career"><span><img src="img/common/iconGlobalNavi05.svg" alt="経験者の方へ" /></span><span>経験者の方へ</span></a></li>
+				</ul>
+				<ul class="footer__navi --type02">
+					<li><a href="<?php echo home_url(); ?>/company">運営会社</a></li>
+					<li><a href="<?php echo home_url(); ?>/request">掲載依頼</a></li>
+					<li><a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a></li>
+					<li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
+				</ul>
+			<!-- /.footer__inner --></div>
+		<!-- /.inBase --></div>
+	<!-- /#footer --></footer>
+
+	<small class="copyright">Copyright &copy; 奈良のトラックドライバー求人. All Rights Reserved.</small>
+        
+	<p id="btnRise"><a href="#wrapper"><i class="icon-chevron-up"></i><span>ページ上部に戻る</span></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+    <div id="btnPageBottom">
+        <div class="btnPageBottom--btn btnPageBottom--type01">
+            <a class="clearfix" href="<?php echo home_url(); ?>/recruitment">
+                <span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span>
+                <p class="btnPageBottom--type01__sent01">奈良のトラックドライバーの<br><b>求人情報を見る</b></p>
+            </a>
+        <!-- /.btnPageBottom--btn --></div>
+    <!-- /#btnPageBottom --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>

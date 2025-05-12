@@ -1,0 +1,448 @@
+@use "../_setting" as s;
+
+
+// .globalNaviSmall　グローバルナビ ハンバーガーメニュー
+.globalNaviSmall {
+	&__icon {
+		width: 3em;
+		height: 3em;
+		position: absolute;
+		top:0.5em;
+		right:0.5em;
+	}
+	&__iconButton{
+		width: 3em;
+		height: 3em;
+		cursor:pointer;
+		float: right;
+		display: block;
+		position: relative;
+		margin:0.5em 0.5em 0.5em 0.5em;
+	  	border-radius: 0.3em 0.3em 0.3em 0.3em;
+		z-index:999;
+		&::before{
+			content:"";
+			width:100%;
+			height:100%;
+			display:block;
+			background: rgba(s.$colorType02,0.45);
+			background:s.$colorType02;
+			transform: rotate(45deg);
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin-top:-1.5em;
+			margin-left:-1.5em;
+			z-index:-1;
+		}
+	}
+	&__icon span {
+	    width: 2em;
+	    height: 1px;
+	    display: block;
+	    background: #FFF;
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    margin-left: -33%; 
+	}
+	.modal{
+		z-index:100;
+	}
+}
+	
+
+.globalNaviSmall{
+	&__icon--type01{
+		// ハンバーガーメニュー 押す前
+		span {
+		  -webkit-transition: all 0.3s;
+		          transition: all 0.3s;
+		  -webkit-transform: rotate(0deg);
+		      -ms-transform: rotate(0deg);
+		          transform: rotate(0deg); 
+		}
+		.iconButton--top {
+		  -webkit-transform: translateY(-0.5em);
+		      -ms-transform: translateY(-0.5em);
+		          transform: translateY(-0.5em); 
+		}
+		.iconButton--bottom {
+		  -webkit-transform: translateY(0.5em);
+		      -ms-transform: translateY(0.5em);
+		          transform: translateY(0.5em); 
+    	}
+
+    	// ハンバーガーメニュー hover
+		&:hover {
+			.iconButton--top {
+			  -webkit-transform: translateY(-0.6em);
+			      -ms-transform: translateY(-0.6em);
+			          transform: translateY(-0.6em);
+			}
+			.iconButton--bottom {
+			  -webkit-transform: translateY(0.6em);
+			      -ms-transform: translateY(0.6em);
+			          transform: translateY(0.6em); 
+          	}
+    	}
+
+    	// ハンバーガーメニュー 押した後の動き
+		&.is-open {
+			.iconButton--middle {
+			  background: rgba(255, 255, 255, 0);
+			}
+			.iconButton--top {
+			  -webkit-transform: rotate(-45deg) translateY(0px);
+			      -ms-transform: rotate(-45deg) translateY(0px);
+			          transform: rotate(-45deg) translateY(0px); 
+			}
+			.iconButton--bottom {
+				  -webkit-transform: rotate(45deg) translateY(0px);
+				      -ms-transform: rotate(45deg) translateY(0px);
+				          transform: rotate(45deg) translateY(0px);
+			}
+    	}
+	}
+}
+
+
+
+/* .globalNaviSmall　スマホグローバルナビ
+------------------------------------------ */
+.globalNaviSmall {
+	display:block;
+	width:100%;
+	position: fixed;
+	z-index:888;
+	top:0;
+	left:0;
+	@include s.media(m){
+		display: none;
+	}
+	&__menu{
+		width:100%;
+	  	max-height: 100vh;
+		display:block;
+		&__inner{
+			width:100%;
+		  	min-height: 100vh;
+			overflow-x:hidden;
+			overflow-y:auto;
+  			padding: 2em;
+			display:block;
+		}
+	}
+	&__siteTitle{
+		display:block;
+		margin-top:4em;
+		@include s.media(m){
+			width:42%;
+		}
+		img{
+			width:100%;
+		}
+		dt{
+			padding:0 20% 0 20%;;
+		}
+		dd{
+			@include s.fontType01(Medium);
+			font-size:0.875em;
+			width:12em;
+			display:block;
+			margin-bottom:2.5em;
+			margin-left:20%;
+			@include s.media(m){
+			}
+		}
+	}
+	&__inner{
+		display:block;
+	}
+	&__navi{
+		width:100%;
+		display:block;
+		@include s.media(m){
+			padding:0 0 0 1em;
+			margin-bottom:4em;
+		}
+		&.--type01{
+			width:100%;
+			display:flex;
+			flex-wrap:wrap;
+			align-items:center;
+			margin-bottom:1em;
+			li{
+				width:50%;
+				margin-bottom:2em;
+				&:nth-child(1){
+					width:100%;
+				}
+			}
+			a {
+				width:100%;
+				text-decoration:none;
+				display:flex;
+				align-items:center;
+				line-height:1.7;
+				margin-right:2em;
+				&:hover {
+						text-decoration:none;
+						color:s.$colorType02;
+				}
+				span{
+					img{
+						width:100%;
+					}
+					&:nth-child(1){
+						width:2em;
+						height:2em;
+						display:inline-block;
+						position:relative;
+						margin-right:1em;
+						&::before{
+							content:"";
+							width:2em;
+							height:2em;
+							display:block;
+							background:s.$colorType02;
+							transform: rotate(45deg);
+							position:absolute;
+							top:50%;
+							left:50%;
+							margin-top:-1em;
+							margin-left:-1em;
+							z-index:-1;
+						}
+					}
+					&:nth-child(2){
+						@include s.fontType01(Medium);
+						font-size:1em;
+					}
+				}
+			}
+		}
+		&.--type02{
+			width:100%;
+			border-top:#E1DDC8 solid 1px;
+			display:flex;
+			flex-wrap:wrap;
+			padding-top:1em;
+			margin-bottom:2.5em;
+			li{
+				width:50%;;
+				padding:5px 2em 5px 0;
+				a{
+					font-size:0.9em;
+					color:#53526C;
+					text-decoration:none;
+					@include s.fontType01(Medium);
+					&:before {
+						content:"\f111  ";
+	                   			 font-family: 'icomoon';
+					}
+					&:hover {
+						color: s.$colorType02;
+					}
+				}
+			}
+		}
+	}
+	.modal__overlay {
+		background: none;
+	}
+	.modal__container {
+		background:rgba(255,255,255,.95);
+		width:100%;
+		max-width: 100%;
+		border-radius: 0;
+  		padding: 0;
+		min-height: 100vh;
+	}
+}
+
+
+/* Safari */
+_:lang(x)+_:-webkit-full-screen-document, .globalNaviSmall__menu {
+  min-height: -webkit-fill-available;
+}
+_:lang(x)+_:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
+  min-height: -webkit-fill-available;
+}
+
+
+
+
+/* .globalNavi　グローバルナビ
+------------------------------------------ */
+
+.globalNavi{
+	display:none;
+	@include s.media(m){
+		width:100%;
+		display:flex;
+		align-items:center;
+	}
+	&__title{
+		width:20%;
+		padding:0.4em 0 0 2em;
+		display:block;
+		opacity:0;
+		-webkit-transition: all .2s ease;
+		transition: all .2s ease;
+		position:relative;
+		img{
+			width:100%;
+		}
+		&::before{
+			content:"";
+			width:3em;
+			height:2em;
+			display:block;
+			background:url(../img/common/imgTrack.svg) no-repeat center top;
+			background-size:100% auto;
+			position:absolute;
+			bottom:-1.5em;
+			right:-3.5em;
+			//transform:rotate(-15deg);
+			z-index:-1;
+		}
+	}
+	&__menu{
+		width:80%;
+		&__main{
+			width:100%;
+			display:flex;
+			justify-content:right;
+			align-items:center;
+			@include s.media(xl){
+				padding-right:2em;
+			}
+			>li {
+				//width: 16.6%;
+				height: 4.5em;
+				padding:1em 0 0 0;
+				text-align:center;
+				display:block;
+			   	position: relative; /*z-indexの指定や子要素の基準とするために指定*/
+			   	z-index: 2; /*ドロップダウンしたメニューが隠れないように*/
+			}
+			li a {
+				text-decoration:none;
+				display:flex;
+				align-items:center;
+				line-height:1.7;
+				margin-right:2em;
+				&:hover {
+					text-decoration:none;
+					color:s.$colorType02;
+				}
+				span{
+					img{
+						width:100%;
+					}
+					&:nth-child(1){
+						@include s.fontType01(Medium);
+						width:2.3em;
+						height:2.3em;
+						display:inline-block;
+						position:relative;
+						margin-right:1em;
+						&::before{
+							content:"";
+							width:2em;
+							height:2em;
+							display:block;
+							background:s.$colorType02;
+							transform: rotate(45deg);
+							position:absolute;
+							top:50%;
+							left:50%;
+							margin-top:-1em;
+							margin-left:-1em;
+							z-index:-1;
+						}
+					}
+					&:nth-child(2){
+						font-size:1em;
+						@include s.media(xl){
+							font-size:1em;
+						}
+						@include s.media(xxl){
+							font-size:1.25em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/* When Active Page */
+body#■■ .globalNavi ul.globalNavi__menu__main>li:nth-child(1)>a {color:#EEE !important; pointer-events: none;}
+body#■■ .globalNavi ul.globalNavi__menu__main>li:nth-child(3)>a {color:#EEE !important; pointer-events: none;}
+
+
+
+/* .globalNavi__menu__sub　グローバルナビサブメニュー
+------------------------------------------ */
+
+
+
+
+ul.globalNavi__menu__sub {
+	width:100%;
+	opacity: 0;  /*サブメニューは最初は非表示にしておく*/
+	visibility: hidden;  /*サブメニューは最初は非表示にしておく*/
+	position: absolute;
+	top: 3.7em;
+	left: 0;
+	border-top: 1px solid #EEE;  /*ボーダートップを指定*/
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	li{
+		height:auto;
+		padding: 0;  /*親メニューのパディングを解除*/
+		margin:0;
+		*margin-top:-8px;
+		display:block;
+		line-height:1.5em;
+		a{
+			border: 1px solid #eee;  /*ボーダーの指定*/
+			border-top: none;  /*ボーダートップは重なって太くなるので解除。一番上は ul 要素に指定*/
+			padding: 0.8rem 0;
+			background-color: #FFF;
+			text-decoration:none;
+			color: #666;
+			text-align:center;
+			display:block;
+			font-size:0.9em;
+			&:hover{ 
+				color:#000;
+				background-color: #EEE;
+			}
+		}
+	}
+}
+
+.globalNavi ul li:hover ul.globalNavi__menu__sub {
+	width:100%;
+	top: 3.9em;
+	visibility:visible;
+	opacity: 1;
+	display: block;    /*マウスオーバー時にサブメニューを表示する*/
+}
+
+.globalNavi.globalNaviAccordion ul.globalNavi__menu__sub li{
+  	padding:0;
+}
+
+/* When Active Page */
+/*body#■■ .globalNavi ul.globalNavi__menu__main li:nth-child(■) ul.globalNavi__menu__sub li:nth-child(■) a { color:#000; background-color: #DDD; pointer-events: none; }*/
+
+
+
+
+

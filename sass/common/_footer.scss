@@ -1,0 +1,153 @@
+@use "../_setting" as s;
+
+#footer {
+	padding:3em 0 0 0;
+	clear: both;
+	border-top:s.$colorType09 solid 5px;
+	background:none;
+	.inBase.--typeFooter{
+		@include s.media(m){
+			display:flex;
+		}
+	}
+}
+
+.home #footer{
+	border-top:none;
+}
+
+.footer {
+	&__siteTitle{
+		display:block;
+		@include s.media(m){
+			width:42%;
+		}
+		img{
+			width:100%;
+		}
+		dt{
+			padding:0 20% 0 20%;;
+		}
+		dd{
+			@include s.fontType01(Medium);
+			font-size:0.875em;
+			width:12em;
+			display:block;
+			margin-bottom:2.5em;
+			margin-left:20%;
+			@include s.media(m){
+			}
+		}
+	}
+	&__inner{
+		display:block;
+		@include s.media(m){
+			width:58%;
+		}
+	}
+}
+
+#wrapper .footer__navi {
+	width:100%;
+	display:block;
+	@include s.media(m){
+		padding:0 0 0 1em;
+		margin-bottom:4em;
+	}
+	&.--type01{
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+		align-items:center;
+		margin-bottom:1em;
+		li{
+			width:50%;
+			margin-bottom:2em;
+			&:nth-child(1){
+				width:100%;
+			}
+		}
+		a {
+			width:100%;
+			text-decoration:none;
+			display:flex;
+			align-items:center;
+			line-height:1.7;
+			margin-right:2em;
+			&:hover {
+					text-decoration:none;
+					color:s.$colorType02;
+			}
+			span{
+				img{
+					width:100%;
+				}
+				&:nth-child(1){
+					width:2em;
+					height:2em;
+					display:inline-block;
+					position:relative;
+					margin-right:1em;
+					&::before{
+						content:"";
+						width:2em;
+						height:2em;
+						display:block;
+						background:s.$colorType02;
+						transform: rotate(45deg);
+						position:absolute;
+						top:50%;
+						left:50%;
+						margin-top:-1em;
+						margin-left:-1em;
+						z-index:-1;
+					}
+				}
+				&:nth-child(2){
+					@include s.fontType01(Medium);
+					font-size:1em;
+					@include s.media(xl){
+						font-size:1.1em;
+					}
+					@include s.media(xxl){
+						font-size:1.25em;
+					}
+				}
+			}
+		}
+	}
+	&.--type02{
+		width:100%;
+		border-top:#E1DDC8 solid 1px;
+		display:flex;
+		flex-wrap:wrap;
+		padding-top:1em;
+		margin-bottom:2.5em;
+		@include s.media(m){
+			padding-top:1em;
+		}
+		li{
+			width:40%;
+			padding:5px 0;
+			margin-right:2em;
+			@include s.media(m){
+				width:auto;
+				padding:0 0 5px;
+				border:none;
+			}
+			a{
+				font-size:0.9em;
+				color:#53526C;
+				text-decoration:none;
+				@include s.fontType01(Medium);
+				&:before {
+					content:"\f111  ";
+                   			 font-family: 'icomoon';
+				}
+				&:hover {
+					color: s.$colorType02;
+				}
+			}
+		}
+	}
+}

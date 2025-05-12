@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" /> 
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page">
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+		<div class="header__headBox">
+			<div class="header__siteTitleBox">
+				<div class="header__siteTitle">
+					<h1><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="奈良のトラックドライバー求人" /></a></h1>
+					<h2 class="header__sentence">奈良のトラックドライバーを応援するWEBサイト</h2>
+				<!-- /.header__siteTitle --></div>
+			<!-- /.header__siteTitleBox --></div>
+			
+		<div id="pageTopFix">
+			<nav class="globalNavi">
+				<div class="globalNavi__title"><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle2.svg" alt="奈良のトラックドライバー求人" /></a></div>
+				<ul class="globalNavi__menu__main">
+					<li><a href="<?php echo home_url(); ?>/recruitment"><span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span><span>求人情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/column"><span><img src="img/common/iconGlobalNavi02.svg" alt="奈良のドライバーコラム" /></span><span>奈良のドライバーコラム</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/consultation"><span><img src="img/common/iconGlobalNavi03.svg" alt="就職相談会情報" /></span><span>就職相談会情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/beginner"><span><img src="img/common/iconGlobalNavi04.svg" alt="未経験者の方へ" /></span><span>未経験者の方へ</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/career"><span><img src="img/common/iconGlobalNavi05.svg" alt="経験者の方へ" /></span><span>経験者の方へ</span></a></li>
+				</ul>
+			<!-- /.globalNavi --></nav>
+
+		<!-- /#pageTopFix --></div>
+		
+		    <nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<dl class="globalNaviSmall__siteTitle">
+										<dt><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="奈良のトラックドライバー求人" /></a></dt>
+										<dd>奈良のトラックドライバーを応援するWEBサイト</dd>
+									</dl>
+
+									<div class="globalNaviSmall__inner">
+										<ul class="globalNaviSmall__navi --type01">
+											<li><a href="<?php echo home_url(); ?>/recruitment"><span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span><span>求人情報</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/column"><span><img src="img/common/iconGlobalNavi02.svg" alt="奈良のドライバーコラム" /></span><span>奈良の<br class="hidden-pc">ドライバーコラム</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/consultation"><span><img src="img/common/iconGlobalNavi03.svg" alt="就職相談会情報" /></span><span>就職相談会情報</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/beginner"><span><img src="img/common/iconGlobalNavi04.svg" alt="未経験者の方へ" /></span><span>未経験者の方へ</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/career"><span><img src="img/common/iconGlobalNavi05.svg" alt="経験者の方へ" /></span><span>経験者の方へ</span></a></li>
+										</ul>
+										<ul class="globalNaviSmall__navi --type02">
+											<li><a href="<?php echo home_url(); ?>/company">運営会社</a></li>
+											<li><a href="<?php echo home_url(); ?>/request">掲載依頼</a></li>
+											<li><a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a></li>
+											<li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
+										</ul>
+									<!-- /.globalNaviSmall__inner --></div>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+		    <!-- /.globalNaviSmall --></nav>
+		<!-- /.header__headBox --></div>
+	<!-- /#header --></header>
+    
+    
+	<div class="pageTitleBox">
+		<div class="inBase"><div class="inBase__inner">
+			<div class="pageTitle">
+				<figure class="pageTitle__bgHead"><img src="img/common/imgPageTitle_top.png" alt=トラックドライバー" /></figure>
+				<figure class="pageTitle__bgBottom"><img src="img/common/imgPageTitle_bottom.png" alt=奈良県からの求人" /></figure>
+				<figure class="pageTitle__image"><img src="img/common/imgPageTitle_image.jpg" alt="奈良のトラックドライバー求人" /></figure>
+				<h1>求人情報</h1>
+			<!-- /.pageTitle --></div>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+	<!-- /.pageTitleBox --></div>
+	
+	
+	
+	<div id="contents" class="clearfix">
+		<div class="topicpathBox sM">
+			<div class="inBase"><div class="inBase__inner clearfix">
+				<div class="topicpath">
+					<ul>
+					    <li><a href="index.html">ホーム</a></li>
+					    <li>タイトル</li>
+					</ul>
+				<!-- /.topicpath --></div>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+		<!-- /.topicpathBox --></div>
+
+		<div class="inBase"><div class="inBase__inner clearfix">
+			<div class="article">
+
+
+			<div class="recruitmentCategoryNaviBox">
+				<p class="recruitmentCategoryNaviBox__title">奈良のトラックドライバーの求人を探す</p>
+				<form method="get" id="searchform" action="<?php echo home_url('/'); ?>">
+					<div class="recruitmentCategoryNaviBox__inner">
+						<p class="recruitmentCategoryNaviBox__listTitle"><span>職種</span></p>
+						<ul class="recruitmentCategoryNaviBox__list">
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_job_cat[]" value="recruitment_medium_truck" id="recruitment_medium_truck"><label for="recruitment_medium_truck">中型トラックドライバー</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_job_cat[]" value="recruitment_large_truck" id="recruitment_large_truck"><label for="recruitment_large_truck">大型トラックドライバー</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_job_cat[]" value="recruitment_Medium_officework" id="recruitment_Medium_officework"><label for="recruitment_Medium_officework">事務</label></li>
+						</ul>
+					<!-- /.recruitmentCategoryNaviBox__inner --></div>
+					<div class="recruitmentCategoryNaviBox__inner">
+						<p class="recruitmentCategoryNaviBox__listTitle"><span>エリア</span></p>
+						<ul class="recruitmentCategoryNaviBox__list">
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_area_cat[]" value="recruitment_kitakatsuragi" id="recruitment_kitakatsuragi"><label for="recruitment_kitakatsuragi">北葛城郡</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_area_cat[]" value="recruitment_kyoto" id="recruitment_kyoto"><label for="recruitment_kyoto">京都市</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_area_cat[]" value="recruitment_fukuchiyama" id="recruitment_fukuchiyama"><label for="recruitment_fukuchiyama">福知山市</label></li>
+						</ul>
+					<!-- /.recruitmentCategoryNaviBox__inner --></div>
+					<div class="recruitmentCategoryNaviBox__inner">
+						<p class="recruitmentCategoryNaviBox__listTitle"><span>雇用形態</span></p>
+						<ul class="recruitmentCategoryNaviBox__list">
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_type_cat[]" value="recruitment_fulltime" id="recruitment_fulltime"><label for="recruitment_fulltime">正社員</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_type_cat[]" value="recruitment_casualwork" id="recruitment_casualwork"><label for="recruitment_casualwork">アルバイト</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_type_cat[]" value="recruitment_parttime" id="recruitment_parttime"><label for="recruitment_parttime">パート</label></li>
+						</ul>
+					<!-- /.recruitmentCategoryNaviBox__inner --></div>
+					<div class="recruitmentCategoryNaviBox__inner">
+						<p class="recruitmentCategoryNaviBox__listTitle"><span>給料</span></p>
+						<ul class="recruitmentCategoryNaviBox__list">
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_salary_cat[]" value="recruitment_salary19" id="recruitment_salary19"><label for="recruitment_salary19">月収19万円まで</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_salary_cat[]" value="recruitment_salary20_24" id="recruitment_salary20_24"><label for="recruitment_salary20_24">月収20万円～24万円</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_salary_cat[]" value="recruitment_salary25_29" id="recruitment_salary25_29"><label for="recruitment_salary25_29">月収25万円～29万円</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_salary_cat[]" value="recruitment_salary30" id="recruitment_salary30"><label for="recruitment_salary30">月収30万円～</label></li>
+						</ul>
+					<!-- /.recruitmentCategoryNaviBox__inner --></div>
+					<div class="recruitmentCategoryNaviBox__inner">
+						<p class="recruitmentCategoryNaviBox__listTitle"><span>条件</span></p>
+						<ul class="recruitmentCategoryNaviBox__list">
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_conditions_cat[]" value="recruitment_education" id="recruitment_education"><label for="recruitment_education">学歴不問</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_conditions_cat[]" value="recruitment_beginner" id="recruitment_beginner"><label for="recruitment_beginner">未経験者歓迎</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_conditions_cat[]" value="recruitment_housing" id="recruitment_housing"><label for="recruitment_housing">社宅完備</label></li>
+							<li><input type="checkbox" class="recruitmentCategoryNaviBox__checkbox" name="recruitment_conditions_cat[]" value="recruitment_allowances" id="recruitment_allowances"><label for="recruitment_allowances">諸手当有</label></li>
+						</ul>
+					<!-- /.recruitmentCategoryNaviBox__inner --></div>
+					<input type="hidden" name="post_type" value="recruitment">
+				        <input type="submit" class="searchBox__submit" name="submit" value="上記の条件で探す" />
+				</form>
+			<!-- /.recruitmentCategoryNaviBox --></div>
+
+
+			<div class="recruitmentArchiveBox">
+				<div class="recruitmentArchiveBox__headBox">
+					<div class="recruitmentArchiveBox__image">
+						<img src="img/home/imgKyujin01.jpg" alt="タイトル" />
+					<!-- /.recruitmentArchiveBox__image --></div>
+					<div class="recruitmentArchiveBox__titleBox">
+						<p class="recruitmentArchiveBox__company">●●株式会社</p>
+						<div class="recruitmentArchiveBox__title"><a href="<?php the_permalink(); ?>"><h2>【中型ウイングドライバー】月収40万円以上可能│昇給│賞与│入社祝い金5万円も！青果物のスーパーやセンターへの配送。パレット・バラ配送</h2></a></div>
+					<!-- /.recruitmentArchiveBox__titleBox --></div>
+				<!-- /.recruitmentArchiveBox__headBox --></div>
+				<div class="recruitmentArchiveBox__category">
+						<ul>
+							<li><a href="#">学歴不問</a></li>
+							<li><a href="#">未経験者歓迎</a></li>
+							<li><a href="#">社宅完備</a></li>
+							<li><a href="#">諸手当有</a></li>
+						</ul>
+				<!-- /.recruitmentArchiveBox__category --></div>
+				<div class="recruitmentArchiveBox__information">
+						<ul>
+							<li><span><img src="img/recruitment/iconRecruitment01.svg" alt="職種" /></span><span>中型トラックドライバー</span></li>
+							<li><span><img src="img/recruitment/iconRecruitment02.svg" alt="給料" /></span><span>月収25万円～29万円</span></li>
+							<li><span><img src="img/recruitment/iconRecruitment03.svg" alt="住所" /></span><span>奈良県北葛城郡上牧町</span></li>
+						</ul>
+				<!-- /.recruitmentArchiveBox__information --></div>
+				<div class="recruitmentArchiveBox__sentence">
+					4ｔトラック（ウィング車）での中距離輸送<br>
+					配送エリアは近畿エリア及び東方面の静岡エリアぐらいの距離範囲です。<br>
+					積み下ろしは基本的にパレットとなりますが、たまに手降ろしの場合もあります。<br>
+					泊りの仕事は基本ありません。
+				<!-- /.recruitmentArchiveBox__sentence --></div>
+
+				<div class="button--type01">
+					<a href="<?php the_permalink(); ?>">詳細を見る</a>
+				<!-- /.button--type01 --></div>
+			<!-- /.recruitmentArchiveBox --></div>
+
+
+			<div class="recruitmentArchiveBox">
+				<div class="recruitmentArchiveBox__headBox">
+					<div class="recruitmentArchiveBox__image">
+						<img src="img/home/imgKyujin01.jpg" alt="タイトル" />
+					<!-- /.recruitmentArchiveBox__image --></div>
+					<div class="recruitmentArchiveBox__titleBox">
+						<p class="recruitmentArchiveBox__company">●●株式会社</p>
+						<div class="recruitmentArchiveBox__title"><a href="<?php the_permalink(); ?>"><h2>【中型ウイングドライバー】月収40万円以上可能│昇給│賞与│入社祝い金5万円も！青果物のスーパーやセンターへの配送。パレット・バラ配送</h2></a></div>
+					<!-- /.recruitmentArchiveBox__titleBox --></div>
+				<!-- /.recruitmentArchiveBox__headBox --></div>
+				<div class="recruitmentArchiveBox__category">
+						<ul>
+							<li><a href="#">学歴不問</a></li>
+							<li><a href="#">未経験者歓迎</a></li>
+							<li><a href="#">社宅完備</a></li>
+							<li><a href="#">諸手当有</a></li>
+						</ul>
+				<!-- /.recruitmentArchiveBox__category --></div>
+				<div class="recruitmentArchiveBox__information">
+						<ul>
+							<li><span><img src="img/recruitment/iconRecruitment01.svg" alt="職種" /></span><span>中型トラックドライバー</span></li>
+							<li><span><img src="img/recruitment/iconRecruitment02.svg" alt="給料" /></span><span>月収25万円～29万円</span></li>
+							<li><span><img src="img/recruitment/iconRecruitment03.svg" alt="住所" /></span><span>奈良県北葛城郡上牧町</span></li>
+						</ul>
+				<!-- /.recruitmentArchiveBox__information --></div>
+				<div class="recruitmentArchiveBox__sentence">
+					4ｔトラック（ウィング車）での中距離輸送<br>
+					配送エリアは近畿エリア及び東方面の静岡エリアぐらいの距離範囲です。<br>
+					積み下ろしは基本的にパレットとなりますが、たまに手降ろしの場合もあります。<br>
+					泊りの仕事は基本ありません。
+				<!-- /.recruitmentArchiveBox__sentence --></div>
+
+				<div class="button--type01">
+					<a href="<?php the_permalink(); ?>">詳細を見る</a>
+				<!-- /.button--type01 --></div>
+			<!-- /.recruitmentArchiveBox --></div>
+
+
+			<div class="recruitmentArchiveBox">
+				<div class="recruitmentArchiveBox__headBox">
+					<div class="recruitmentArchiveBox__image">
+						<img src="img/home/imgKyujin01.jpg" alt="タイトル" />
+					<!-- /.recruitmentArchiveBox__image --></div>
+					<div class="recruitmentArchiveBox__titleBox">
+						<p class="recruitmentArchiveBox__company">●●株式会社</p>
+						<div class="recruitmentArchiveBox__title"><a href="<?php the_permalink(); ?>"><h2>【中型ウイングドライバー】月収40万円以上可能│昇給│賞与│入社祝い金5万円も！青果物のスーパーやセンターへの配送。パレット・バラ配送</h2></a></div>
+					<!-- /.recruitmentArchiveBox__titleBox --></div>
+				<!-- /.recruitmentArchiveBox__headBox --></div>
+				<div class="recruitmentArchiveBox__category">
+						<ul>
+							<li><a href="#">学歴不問</a></li>
+							<li><a href="#">未経験者歓迎</a></li>
+							<li><a href="#">社宅完備</a></li>
+							<li><a href="#">諸手当有</a></li>
+						</ul>
+				<!-- /.recruitmentArchiveBox__category --></div>
+				<div class="recruitmentArchiveBox__information">
+						<ul>
+							<li><span><img src="img/recruitment/iconRecruitment01.svg" alt="職種" /></span><span>中型トラックドライバー</span></li>
+							<li><span><img src="img/recruitment/iconRecruitment02.svg" alt="給料" /></span><span>月収25万円～29万円</span></li>
+							<li><span><img src="img/recruitment/iconRecruitment03.svg" alt="住所" /></span><span>奈良県北葛城郡上牧町</span></li>
+						</ul>
+				<!-- /.recruitmentArchiveBox__information --></div>
+				<div class="recruitmentArchiveBox__sentence">
+					4ｔトラック（ウィング車）での中距離輸送<br>
+					配送エリアは近畿エリア及び東方面の静岡エリアぐらいの距離範囲です。<br>
+					積み下ろしは基本的にパレットとなりますが、たまに手降ろしの場合もあります。<br>
+					泊りの仕事は基本ありません。
+				<!-- /.recruitmentArchiveBox__sentence --></div>
+
+				<div class="button--type01">
+					<a href="<?php the_permalink(); ?>">詳細を見る</a>
+				<!-- /.button--type01 --></div>
+			<!-- /.recruitmentArchiveBox --></div>
+
+
+
+
+
+			<!-- /.article --></div>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+
+        
+	<!-- /#contents --></div>
+
+
+	
+	<footer id="footer">
+		<div class="inBase clearfix --typeFooter">
+			<dl class="footer__siteTitle">
+				<dt><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="奈良のトラックドライバー求人" /></a></dt>
+				<dd>奈良のトラックドライバーを応援するWEBサイト</dd>
+			</dl>
+
+			<div class="footer__inner">
+				<ul class="footer__navi --type01">
+					<li><a href="<?php echo home_url(); ?>/recruitment"><span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span><span>求人情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/column"><span><img src="img/common/iconGlobalNavi02.svg" alt="奈良のドライバーコラム" /></span><span>奈良の<br class="hidden-pc">ドライバーコラム</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/consultation"><span><img src="img/common/iconGlobalNavi03.svg" alt="就職相談会情報" /></span><span>就職相談会情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/beginner"><span><img src="img/common/iconGlobalNavi04.svg" alt="未経験者の方へ" /></span><span>未経験者の方へ</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/career"><span><img src="img/common/iconGlobalNavi05.svg" alt="経験者の方へ" /></span><span>経験者の方へ</span></a></li>
+				</ul>
+				<ul class="footer__navi --type02">
+					<li><a href="<?php echo home_url(); ?>/company">運営会社</a></li>
+					<li><a href="<?php echo home_url(); ?>/request">掲載依頼</a></li>
+					<li><a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a></li>
+					<li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
+				</ul>
+			<!-- /.footer__inner --></div>
+		<!-- /.inBase --></div>
+	<!-- /#footer --></footer>
+
+	<small class="copyright">Copyright &copy; 奈良のトラックドライバー求人. All Rights Reserved.</small>
+        
+	<p id="btnRise"><a href="#wrapper"><i class="icon-chevron-up"></i><span>ページ上部に戻る</span></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+    <div id="btnPageBottom">
+        <div class="btnPageBottom--btn btnPageBottom--type01">
+            <a class="clearfix" href="<?php echo home_url(); ?>/recruitment">
+                <span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span>
+                <p class="btnPageBottom--type01__sent01">奈良のトラックドライバーの<br><b>求人情報を見る</b></p>
+            </a>
+        <!-- /.btnPageBottom--btn --></div>
+    <!-- /#btnPageBottom --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>

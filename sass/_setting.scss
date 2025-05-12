@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+// ==================================
+//　サイトの基本設定　変数
+// ==================================
+
+// 色関係の設定 -----------------------
+	$colorType01: #F7F4E6;	//ベースカラー		クリーム色
+	$colorType02: #E78F81;	//メインカラー		オレンジ
+	$colorType03: #59B1F4;	//アクセントカラー	水色
+	$colorType04: #916AB5;	//アクセントカラー2	紫
+	$colorType05: #E04F38;	//強調			濃いオレンジ
+	$colorType06: #FFCFB3;	//地カラー		薄いオレンジ
+	$colorType07: #B7E0FF;	//地カラー		薄い水色
+	$colorType08: #7841AC;	//地カラー		薄い紫
+	$colorType09: #E1DDC8;	//地カラー		濃いクリーム色
+
+	$color-link: #808080;	//リンクカラー
+	$color-link-l: #ccc;	//リンクカラー薄い
+	$color-link-d: #000;	//リンクカラー濃い
+
+// フォント関係の設定 -----------------------
+	$sansSerif: "メイリオ","Meiryo","ＭＳ Ｐゴシック","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",sans-serif;
+	$serif: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+	$font-weights: (
+		Light:300,
+		Regular:400,
+		Medium:500,
+		SemiBold:600,
+		Bold:700,
+		ExtraBold:800,
+		Black:900,
+	);
+	@mixin fontType01($font-weight){
+		font-family: "Noto Sans JP", serif;
+		font-optical-sizing: auto;
+		font-weight: map-get($font-weights,$font-weight);
+		font-style: normal;
+	}
+	@mixin fontType02($font-weight){
+		font-family: "Zen Maru Gothic", serif;
+		font-weight: map-get($font-weights,$font-weight);
+		font-style: normal;
+	}
+
+
+// 余白設定 -----------------------
+	$spaceSize: 1.8rem;
+
+// ブレイクポイント -----------------------
+	$breakpoints: (
+		xs:"print, screen and (min-width: 321px)",
+		s:"print, screen and (min-width: 576px)",
+		m:"print, screen and (min-width: 768px)",
+		l:"print, screen and (min-width: 992px)",
+		xl:"print, screen and (min-width: 1280px)",
+		xxl:"print, screen and (min-width: 1600px)",
+		xxxl:"print, screen and (min-width: 1800px)",
+	);
+	@mixin media($breakpoint){
+		@media #{map-get($breakpoints,$breakpoint)}{
+			@content;
+		}
+	}
+
+// z-index 設定 -----------------------
+	$layer: (
+		modal: 999,
+		header: 20,
+		tooltip: 10,
+		default: 1
+	);
+
+// px→em サイズ調整 16でわる-----------------------
+	@function em($px, $base: 16) {
+		$value: $px;
+		$value: calc($px/$base) * 1em;
+		@return $value;
+	}
+
+// ページ個別設定 -----------------------
+	$pageNameList: company, contact;

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" /> 
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page">
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+		<div class="header__headBox">
+			<div class="header__siteTitleBox">
+				<div class="header__siteTitle">
+					<h1><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="奈良のトラックドライバー求人" /></a></h1>
+					<h2 class="header__sentence">奈良のトラックドライバーを応援するWEBサイト</h2>
+				<!-- /.header__siteTitle --></div>
+			<!-- /.header__siteTitleBox --></div>
+			
+		<div id="pageTopFix">
+			<nav class="globalNavi">
+				<div class="globalNavi__title"><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle2.svg" alt="奈良のトラックドライバー求人" /></a></div>
+				<ul class="globalNavi__menu__main">
+					<li><a href="<?php echo home_url(); ?>/recruitment"><span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span><span>求人情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/column"><span><img src="img/common/iconGlobalNavi02.svg" alt="奈良のドライバーコラム" /></span><span>奈良のドライバーコラム</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/consultation"><span><img src="img/common/iconGlobalNavi03.svg" alt="就職相談会情報" /></span><span>就職相談会情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/beginner"><span><img src="img/common/iconGlobalNavi04.svg" alt="未経験者の方へ" /></span><span>未経験者の方へ</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/career"><span><img src="img/common/iconGlobalNavi05.svg" alt="経験者の方へ" /></span><span>経験者の方へ</span></a></li>
+				</ul>
+			<!-- /.globalNavi --></nav>
+
+		<!-- /#pageTopFix --></div>
+		
+		    <nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<dl class="globalNaviSmall__siteTitle">
+										<dt><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="奈良のトラックドライバー求人" /></a></dt>
+										<dd>奈良のトラックドライバーを応援するWEBサイト</dd>
+									</dl>
+
+									<div class="globalNaviSmall__inner">
+										<ul class="globalNaviSmall__navi --type01">
+											<li><a href="<?php echo home_url(); ?>/recruitment"><span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span><span>求人情報</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/column"><span><img src="img/common/iconGlobalNavi02.svg" alt="奈良のドライバーコラム" /></span><span>奈良の<br class="hidden-pc">ドライバーコラム</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/consultation"><span><img src="img/common/iconGlobalNavi03.svg" alt="就職相談会情報" /></span><span>就職相談会情報</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/beginner"><span><img src="img/common/iconGlobalNavi04.svg" alt="未経験者の方へ" /></span><span>未経験者の方へ</span></a></li>
+											<li><a href="<?php echo home_url(); ?>/career"><span><img src="img/common/iconGlobalNavi05.svg" alt="経験者の方へ" /></span><span>経験者の方へ</span></a></li>
+										</ul>
+										<ul class="globalNaviSmall__navi --type02">
+											<li><a href="<?php echo home_url(); ?>/company">運営会社</a></li>
+											<li><a href="<?php echo home_url(); ?>/request">掲載依頼</a></li>
+											<li><a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a></li>
+											<li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
+										</ul>
+									<!-- /.globalNaviSmall__inner --></div>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+		    <!-- /.globalNaviSmall --></nav>
+		<!-- /.header__headBox --></div>
+	<!-- /#header --></header>
+    
+    
+	<div class="pageTitleBox">
+		<div class="inBase"><div class="inBase__inner">
+			<div class="pageTitle">
+				<figure class="pageTitle__bgHead"><img src="img/common/imgPageTitle_top.png" alt=トラックドライバー" /></figure>
+				<figure class="pageTitle__bgBottom"><img src="img/common/imgPageTitle_bottom.png" alt=奈良県からの求人" /></figure>
+				<figure class="pageTitle__image"><img src="img/common/imgPageTitle_image.jpg" alt="奈良のトラックドライバー求人" /></figure>
+				<h1>求人情報</h1>
+			<!-- /.pageTitle --></div>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+	<!-- /.pageTitleBox --></div>
+	
+	
+	
+	<div id="contents" class="clearfix">
+		<div class="topicpathBox sM">
+			<div class="inBase"><div class="inBase__inner clearfix">
+				<div class="topicpath">
+					<ul>
+					    <li><a href="index.html">ホーム</a></li>
+					    <li>タイトル</li>
+					</ul>
+				<!-- /.topicpath --></div>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+		<!-- /.topicpathBox --></div>
+
+		<div class="inBase"><div class="inBase__inner clearfix">
+			<div class="article">
+
+			<div class="recruitmentHeadBox" id="recruitment-information">
+				<div class="recruitmentHeadBox__titleBox">
+					<p class="recruitmentHeadBox__titleBox__company">●●株式会社</p>
+					<div class="recruitmentHeadBox__titleBox__title"><h1>【中型ウイングドライバー】月収40万円以上可能│昇給│賞与│入社祝い金5万円も！青果物のスーパーやセンターへの配送。パレット・バラ配送</h1></div>
+					<div class="recruitmentHeadBox__titleBox__category">
+						<ul>
+							<li><a href="#">学歴不問</a></li>
+							<li><a href="#">未経験者歓迎</a></li>
+							<li><a href="#">社宅完備</a></li>
+							<li><a href="#">諸手当有</a></li>
+						</ul>
+					<!-- /.recruitmentHeadBox__titleBox__category --></div>
+				<!-- /.recruitmentHeadBox__titleBox --></div>
+				<div class="recruitmentHeadBox__image">
+					<img src="img/home/imgKyujin01.jpg" alt="タイトル" />
+				<!-- /.recruitmentHeadBox__image --></div>
+			<!-- /.recruitmentHeadBox --></div>
+
+			<div class="recruitmentContentBox --typeScrollFix">
+				<div class="recruitmentContentBox__naviBox --typeScrollFix__subject">
+					<ul>
+						<li><a href="#recruitment-information">求人情報</a></li>
+						<li><a href="#recruitment-summary">募集要項</a></li>
+						<li><a href="#recruitment-conditions">応募条件</a></li>
+						<li><a href="#recruitment-employer">企業情報</a></li>
+					</ul>
+				<!-- /.recruitmentContentBox__naviBox --></div>
+				<div class="recruitmentContentBox__jobContent">
+					<div class="recruitmentContentBox__jobContent__title">
+						仕事内容
+					<!-- /.recruitmentContentBox__jobContent__title --></div>
+					<h2 class="recruitmentContentBox__jobContent__content">
+						4ｔトラック（ウィング車）での中距離輸送
+					<!-- /.recruitmentContentBox__jobContent__title --></h2>
+					<p class="recruitmentContentBox__jobContent__sentence">
+						配送エリアは近畿エリア及び東方面の静岡エリアぐらいの距離範囲です。<br>
+						積み下ろしは基本的にパレットとなりますが、たまに手降ろしの場合もあります。<br>
+						泊りの仕事は基本ありません。<br>
+					<!-- /.recruitmentContentBox__jobContent__title --></p>
+				<!-- /.recruitmentContentBox__jobContent --></div>
+
+				<div class="recruitmentContentBox__point">
+					<div class="recruitmentContentBox__point__title">
+						<span>この仕事のおすすめポイント</span>
+					<!-- /.recruitmentContentBox__point__title --></div>
+					<div class="recruitmentContentBox__point__sentence">
+						<p>昇給賞与あり！長く務めたくなる福利厚生！</p>
+						<p>同業他社からの転職者も多数活躍中</p>
+						<p>志望理由は問いません</p>
+						<p>積み込みはリフトを使用するので体力的な心配なし！</p>
+						<p>固定ルート＆近畿エリア配送で毎日帰れる</p>
+					<!-- /.recruitmentContentBox__point__sentence --></div>
+					
+					<div class="recruitmentContentBox__point__content">
+						<h2>頑張りが収入につながるお仕事</h2>
+						<p>中型免許があれば未経験OK！｢新人だから稼げない…｣なんてことは一切ナシ！月収40万円以上も可能♪<br>
+							繁忙期には50万円の実績もあり 日祝＋α休みでプライベート充実◎
+						</p>
+						<p>分からないことや困ったことなどは､ 電話すると丁寧に教えてくれるので安心！<br>
+							職場の雰囲気も良く､居心地も抜群です！
+						</p>
+						<p>｢学校行事なども相談しながらお休みも取れるところがありがたい｣<br>
+							｢社員思いな社長でとても働きやすい環境｣といった声もあり､働きやすい職場をお約束します。
+						</p>
+
+						<h2>未経験や復帰の方も安心なワケ</h2>
+						<h3>その1『日勤･日帰りのみ』</h3>
+						<p>勤務時間は4:00～14:00<br>
+							朝は早いですが､その分早く帰れます！<br>
+							そのことで家族との時間や私生活も充実できますよ<br>
+							※コースによって異なる
+						</p>
+						<h3>その2『配送エリアは近畿エリアのみ』</h3>
+						<p>近畿エリアのみの配送なので､運転好きの方には<br>
+							さほど長い距離ではないはず｡<br>
+							日々無理なく､運転に集中していただけます！
+						</p>
+						<h3>その3『フォロー体制が整っています』</h3>
+						<p>｢車の運転に慣れていないので不安だ…｣<br>
+							｢道がまだ覚えきれていないので教えて欲しい…｣<br>
+							など、未経験者や自信のない方には、<br>
+							丁寧に指導しますのでご安心下さい。
+						</p>
+					<!-- /.recruitmentContentBox__point__content --></div>
+				<!-- /.recruitmentContentBox__point --></div>
+
+				<div class="recruitmentContentBox__summaryBox" id="recruitment-summary">
+					<h2>募集要項</h2>
+					<table class="table--typeRecruitment">
+						<tr>
+							<th>職種</th>
+							<td>ドライバー（4ｔウィング車）</td>
+						</tr>
+						<tr>
+							<th>雇用形態</th>
+							<td>正社員</td>
+						</tr>
+						<tr>
+							<th>給与・昇給・賞与</th>
+							<td>■月給(a+b)：304,000円 ～ 514,000円<br>
+								　a　基本給（月額換算・月平均労働日数：21.7日）<br>
+								　　　　　284,000円 ～ 494,000円<br><br>
+
+								　b　定期的に支払われる手当<br>
+								　　　　　愛車手当：20,000円 ～ 20,000円<br>
+
+								　c　その他の手当等付記事項<br>
+								　　　　　無事故手当：20,000円／月<br>
+								　　　　　携帯電話手当<br>
+								　　　　　残業手当<br><br>
+
+								■日給：15,000 ～ 25,000円<br><br>
+
+								■昇給あり<br><br>
+
+								■賞与なし<br><br>
+
+								※試用期間あり（3ヶ月/試用期間中は日給9,000円～18,000円）<br>
+								経験により大幅短縮の可能性があります。</td>
+						</tr>
+						<tr>
+							<th>勤務時間</th>
+							<td>変形（1年単位） 8:00～17:00<br><br>
+								時間外あり<br>
+								休憩時間：60分</td>
+						</tr>
+						<tr>
+							<th>勤務地</th>
+							<td>〒639-0202 奈良県北葛城郡上牧町桜ケ丘2丁目14-10<br>
+								奈良交通「桜ケ丘1丁目」下車　徒歩5分<br><br>
+
+								マイカー通勤可（無料駐車場あり）</td>
+						</tr>
+						<tr>
+							<th>車形状</th>
+							<td>10ｔウィング車</td>
+						</tr>
+						<tr>
+							<th>輸送品目</th>
+							<td>食品</td>
+						</tr>
+						<tr>
+							<th>諸手当</th>
+							<td>愛車手当　無事故手当　携帯電話手当　残業手当</td>
+						</tr>
+						<tr>
+							<th>福利厚生</th>
+							<td>雇用保険　労災保険　健康保険　厚生年金<br>
+								社宅完備<br>
+								車の貸与制度</td>
+						</tr>
+						<tr>
+							<th>休日</th>
+							<td>シフト制<br>
+								年末年始、お盆、ゴールデンウイーク<br><br>
+
+								6ヶ月経過後の年次有給休暇日数：10日</td>
+						</tr>
+						<tr>
+							<th>その他</th>
+							<td>試用期間あり（3ヶ月　試用期間中は日給9,000円～18,000円）<br>
+								離職率が低い環境です</td>
+						</tr>
+					<!-- /.table--typeRecruitment --></table>
+
+				<!-- /.recruitmentContentBox__summaryBox --></div>
+
+				<div class="recruitmentContentBox__conditionsBox" id="recruitment-conditions">
+					<h2>応募条件</h2>
+					<table class="table--typeRecruitment">
+						<tr>
+							<th>必要免許</th>
+							<td>中型自動車運転免許<br>フォークリフト免許</td>
+						</tr>
+						<tr>
+							<th>応募資格</th>
+							<td>学歴、年齢、経験不問</td>
+						</tr>
+						<tr>
+							<th>応募方法</th>
+							<td>応募フォームもしくは、<br>
+								事前に電話連絡の上、履歴書（写真貼付け）をご持参ください。<br>
+								TEL：0745-56-5051<br><br>
+
+								＊応募の秘密は厳守いたします。<br>
+								＊応募頂く個人情報は採用業務のみに利用し、<br>
+								他の目的での利用や第三者への譲渡・開示することはありません。</td>
+						</tr>
+					<!-- /.table--typeRecruitment --></table>
+
+					<div class="button--typeRecruitment tC">
+							<a href="#">この求人に応募する</a>
+					<!-- /.button--type01 --></div>
+					
+				<!-- /.recruitmentContentBox__conditionsBox --></div>
+
+				<div class="recruitmentContentBox__employerBox" id="recruitment-employer">
+					<h2>企業情報</h2>
+					<table class="table--typeRecruitment">
+						<tr>
+							<th>会社名</th>
+							<td>エイトポイント</td>
+						</tr>
+						<tr>
+							<th>本社所在地</th>
+							<td>〒639-0202 奈良県北葛城郡上牧町桜ケ丘2丁目14-10<br>奈良交通「桜ケ丘1丁目」下車　徒歩5分</td>
+						</tr>
+						<tr>
+							<th>設立</th>
+							<td>平成19年</td>
+						</tr>
+						<tr>
+							<th>代表者</th>
+							<td>谷田　佳明</td>
+						</tr>
+						<tr>
+							<th>従業員数</th>
+							<td>10人</td>
+						</tr>
+						<tr>
+							<th>事業内容</th>
+							<td>一般貨物運送業。軽トラックから大型トラックで、<br>大手企業や個人宅の集荷配達を行います。</td>
+						</tr>
+						<tr>
+							<th>企業の特徴</th>
+							<td>創立間もない会社ですが、全国に支店を持つ業界大手の会社との<br>専属契約ができており、安定した仕事内容です。</td>
+						</tr>
+					<!-- /.table--typeRecruitment --></table>
+
+					<div class="button--typeRecruitment tC">
+							<a href="#">この求人に応募する</a>
+					<!-- /.button--type01 --></div>
+					
+				<!-- /.recruitmentContentBox__employerBox --></div>
+
+
+
+			<!-- /.recruitmentContentBox --></div>
+
+			<!-- /.article --></div>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+
+        
+	<!-- /#contents --></div>
+
+
+	
+	<footer id="footer">
+		<div class="inBase clearfix --typeFooter">
+			<dl class="footer__siteTitle">
+				<dt><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="奈良のトラックドライバー求人" /></a></dt>
+				<dd>奈良のトラックドライバーを応援するWEBサイト</dd>
+			</dl>
+
+			<div class="footer__inner">
+				<ul class="footer__navi --type01">
+					<li><a href="<?php echo home_url(); ?>/recruitment"><span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span><span>求人情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/column"><span><img src="img/common/iconGlobalNavi02.svg" alt="奈良のドライバーコラム" /></span><span>奈良の<br class="hidden-pc">ドライバーコラム</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/consultation"><span><img src="img/common/iconGlobalNavi03.svg" alt="就職相談会情報" /></span><span>就職相談会情報</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/beginner"><span><img src="img/common/iconGlobalNavi04.svg" alt="未経験者の方へ" /></span><span>未経験者の方へ</span></a></li>
+					<li><a href="<?php echo home_url(); ?>/career"><span><img src="img/common/iconGlobalNavi05.svg" alt="経験者の方へ" /></span><span>経験者の方へ</span></a></li>
+				</ul>
+				<ul class="footer__navi --type02">
+					<li><a href="<?php echo home_url(); ?>/company">運営会社</a></li>
+					<li><a href="<?php echo home_url(); ?>/request">掲載依頼</a></li>
+					<li><a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a></li>
+					<li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
+				</ul>
+			<!-- /.footer__inner --></div>
+		<!-- /.inBase --></div>
+	<!-- /#footer --></footer>
+
+	<small class="copyright">Copyright &copy; 奈良のトラックドライバー求人. All Rights Reserved.</small>
+        
+	<p id="btnRise"><a href="#wrapper"><i class="icon-chevron-up"></i><span>ページ上部に戻る</span></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+    <div id="btnPageBottom">
+        <div class="btnPageBottom--btn btnPageBottom--type01">
+            <a class="clearfix" href="<?php echo home_url(); ?>/recruitment">
+                <span><img src="img/common/iconGlobalNavi01.svg" alt="求人情報" /></span>
+                <p class="btnPageBottom--type01__sent01">奈良のトラックドライバーの<br><b>求人情報を見る</b></p>
+            </a>
+        <!-- /.btnPageBottom--btn --></div>
+    <!-- /#btnPageBottom --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>
